@@ -41,7 +41,10 @@ class PortBindings extends PureComponent {
       }
 
       if (network.ReservedPorts != null) {
-        const ip = ("Networks" in this.props.client.Resources && this.props.client.Resources.Networks.length > 0) ? this.props.client.Resources.Networks[0].IP : "unique.network.ip-address" in this.props.client.Attributes? this.props.client.Attributes["unique.network.ip-address"] : undefined
+        let ip = undefined
+        try {
+          ip = this.props.client.Resources.Networks[0].IP
+        } catch (e) {}
 
         network.ReservedPorts.map((portMap, index) => {
           network_items.push(
