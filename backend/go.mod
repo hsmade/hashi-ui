@@ -5,6 +5,8 @@ go 1.13
 require (
 	github.com/armon/go-metrics v0.3.2 // indirect
 	github.com/cnf/structhash v0.0.0-20180104161610-62a607eb0224
+	github.com/elazarl/go-bindata-assetfs v1.0.1 // indirect
+	github.com/go-bindata/go-bindata v3.1.2+incompatible // indirect
 	github.com/google/btree v1.0.0 // indirect
 	github.com/gorilla/mux v1.8.0
 	github.com/gorilla/websocket v1.4.2
@@ -17,6 +19,7 @@ require (
 	github.com/hashicorp/go-uuid v1.0.2 // indirect
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/hashicorp/nomad/api v0.0.0-20210318193511-7c7569674c9d
+	github.com/jteeuwen/go-bindata v3.0.7+incompatible // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/miekg/dns v1.1.27 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
