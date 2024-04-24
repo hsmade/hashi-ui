@@ -25,7 +25,6 @@ bindata_assetfs.go:
 
 	@echo "=> packaging assets ..."
 	go-bindata-assetfs -prefix ../frontend ../frontend/build/...
-	sed -i bindata.go -e 's/"io"/"io"\n\t"os"/'
 
 .PHONY: build
 build: install
